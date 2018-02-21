@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>myBox</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.min.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/swiper/swiper.min.css">
+		<script src="../js/swiper/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/jquery-ui.css">
+		<script src="../js/jquery-ui.js"></script>
+	</head>
+	<body class="sub deliver pickup">
+		<div id="wrap">
+			<!-- Nav -->
+			<div id="nav">
+				<button class="burger" type="button"><img src="../images/tab_button.png" alt="메뉴"></button>
+				<div class="nav_header">
+					<h1><a href="01메인화면.html"><img class="logo" src="../images/logo.png" alt="myBox"></a></h1>
+				</div>
+				<div class="gnb_wrap">
+					<div class="user_info">
+						<div class="user_state">
+							<span class="user">Gami</span>님 로그인 중
+							<!-- <a class="login_wrap" href="index.html"><img src="../images/login.png" alt="로그인"></a> -->
+							<a class="login_wrap" href="#로그아웃"><img src="../images/logout.png" alt="로그아웃"></a>
+						</div>
+
+						<a href="박스이력.html">
+							<dl class="order_record">
+								<dt>
+									<div class="record_count">
+										<img src="../images/order_record.png" alt="박스카운트">
+										<span class="alert_count">5</span>
+									</div>
+									<p>박스이력</p>
+								</dt>
+								<dd>
+									<dl class="detail_info">
+										<dt>현재 보관 중 아이템</dt>
+										<dd><em>10건</em></dd>
+										<dt>현재 보관 요금</dt>
+										<dd><em>7,000원</em></dd>
+										<dt>비용청구일</dt>
+										<dd>2018년 2월 2일</dd>
+									</dl>
+								</dd>
+							</dl>
+						</a>
+					</div>
+					<ul class="gnb">
+						<li><a href="17-02회원정보수정.html">내 정보변경</a></li>
+						<li><a href="09활동알림.html">활동/알림<span class="alert_count">12</span></a></li>
+						<li><a href="10결제내역.html">결제내역</a></li>
+						<li><a href="11견적내역.html">견적내역</a></li>
+						<li><a href="12FAQ.html">FAQ</a></li>
+						<li><a href="13push알림.html">PUSH 알림</a></li>
+						<li><a href="14이벤트.html">이벤트</a></li>
+						<li><a href="15설정.html">설정</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //Nav -->
+			<!-- Header -->
+			<div id="header">
+				<h1><a href="01메인화면.html"><img class="logo" src="../images/logo.png" alt="myBox"></a></h1>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con">
+						<ul class="step_state">
+							<li class="on">step1</li>
+							<li>step2</li>
+							<li>step3</li>
+							<li>step4</li>
+							<li>step5</li>
+						</ul>
+						<div class="title_wrap">
+							<h2 class="headline">01. 보관 중 박스</h2>
+						</div>
+						<ul class="order_info">
+							<li>
+								<dl><dt>보관아이템</dt><dd><strong>5개</strong></dd></dl>
+							</li>
+							<li>
+								<dl><dt>보관일</dt><dd><strong>20일</strong></dd></dl>
+							</li>
+							<li>
+								<dl><dt>청구예정</dt><dd><strong>36,000원</strong></dd></dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Section 01 -->
+				<!-- Section 02 -->
+				<div class="section">
+					<div class="con">
+						<ul class="box_category step4_order">
+							<li class="round_wrap">
+								<div class="chk_style">
+									<input id="" type="checkbox">
+									<i></i>
+								</div>
+								<h3><span class="multi_box"></span>다용도 박스</h3>
+								<!--
+									span에 클래스명 붙이면 아이콘 나옵니다.
+									multi_box : 다용도 박스
+									cloth_box : 옷걸이 박스
+									paper_box : 서류 박스
+									golf_box : 골프장비
+									bike_box : 자전거
+									ski_box : 스키/보드
+									carrier_sm_box : 소형커리어
+									carrier_lg_box : 대형커리어
+								 -->
+								<button class="item_info" type="button"><img src="../images/icon_memo.png" alt="아이템 정보입력"></button>
+								<div class="item">
+									<div class="camera_wrap">
+										<!-- <img src="../images/order/img_cloth_box.png" alt="샘플등록이미지"> -->
+										<button class="btn_camera" type="button"></button>
+									</div>
+									<dl class="item_name">
+										<dt>아이템명</dt><dd>아이들 장난감</dd>
+										<dt>보관일</dt><dd>2018년 1월03일</dd>
+										<dt>현재비용</dt><dd><strong>12,000원</strong></dd>
+									</dl>
+								</div>
+							</li>
+							<li class="round_wrap">
+								<div class="chk_style">
+									<input id="" type="checkbox">
+									<i></i>
+								</div>
+								<h3><span class="cloth_box"></span>옷걸이 박스</h3>
+								<button class="item_info" type="button"><img src="../images/icon_memo.png" alt="아이템 정보입력"></button>
+								<div class="item">
+									<div class="camera_wrap">
+										<!-- <img src="../images/order/img_cloth_box.png" alt="샘플등록이미지"> -->
+										<button class="btn_camera" type="button"></button>
+									</div>
+									<dl class="item_name">
+										<dt>아이템명</dt><dd>아이들 장난감</dd>
+										<dt>보관일</dt><dd>2018년 1월03일</dd>
+										<dt>현재비용</dt><dd><strong>12,000원</strong></dd>
+									</dl>
+								</div>
+							</li>
+							<li class="round_wrap">
+								<div class="chk_style">
+									<input id="" type="checkbox">
+									<i></i>
+								</div>
+								<h3><span class="paper_box"></span>서류 박스</h3>
+								<button class="item_info" type="button"><img src="../images/icon_memo.png" alt="아이템 정보입력"></button>
+								<div class="item">
+									<div class="camera_wrap">
+										<!-- <img src="../images/order/img_cloth_box.png" alt="샘플등록이미지"> -->
+										<button class="btn_camera" type="button"></button>
+									</div>
+									<dl class="item_name">
+										<dt>아이템명</dt><dd>아이들 장난감</dd>
+										<dt>보관일</dt><dd>2018년 1월03일</dd>
+										<dt>현재비용</dt><dd><strong>12,000원</strong></dd>
+									</dl>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //Section 02 -->
+				<a href="07-02보관아이템정보입력.html" class="btn">다음</a>
+			</div>
+			<!-- //Container -->
+
+			<!-- Bottom -->
+			<div id="bottom">
+				<ul id="quick_nav">
+					<li><a href="09활동알림.html"><img src="../images/main/icon_bell.png" alt="활동/알람"></a></li>
+					<li><a href="06-01수거요청.html"><img src="../images/main/icon_mybox.png" alt="수거요청"></a></li>
+					<li><a href="07-01창고보관중.html"><img src="../images/main/icon_storage.png" alt="창고아이템배송요청"></a></li>
+				</ul>
+			</div>
+			<!-- //Bottom -->
+		</div>
+
+		<!-- Pop up: 카메라 -->
+		<div class="pop_wrap camera">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">마이박스</h2>
+					<button class="btn" type="button">사진활영하여 등록</button>
+					<button class="btn" type="button">사진앨범에서 등록</button>
+					<button class="btn_gray cancle" type="button">취소</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 카메라 -->
+
+		<!-- Pop up: 정보입력 -->
+		<div class="pop_wrap item_memo">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">마이박스</h2>
+
+					<h3>아이템 명</h3>
+					<input type="text">
+					<h3>설명</h3>
+					<textarea name="name" rows="8" cols="80" placeholder="200자 이내 작성"></textarea>
+					<button class="btn ok" type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 정보입력 -->
+	</body>
+</html>

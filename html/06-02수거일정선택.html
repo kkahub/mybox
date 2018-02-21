@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>myBox</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.min.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/swiper/swiper.min.css">
+		<script src="../js/swiper/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/jquery-ui.css">
+		<script src="../js/jquery-ui.js"></script>
+	</head>
+	<body class="sub pickup">
+		<div id="wrap">
+			<!-- Header -->
+			<div id="header">
+				<a href="javascript:history.back();" class="back_arrow">
+					<img src="../images/icon_backpage.png" alt="뒤로가기">
+				</a>
+				<h1><a href="01메인화면.html"><img src="../images/logo.png" alt="myBox"></a></h1>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con">
+						<ul class="step_state">
+							<li>step1</li>
+							<li class="on">step2</li>
+							<li>step3</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //Section 01 -->
+				<!-- Section 02 -->
+				<div class="section">
+					<div class="con notice_info">
+						<div class="notice_info_wrap clearfix">
+							<h2 class="headline">즉시수거 안내</h2>
+							<ul class="list">
+								<li> 상자에 담으실 동안 저희 기사님께서 20분까지 기다려주세요.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Section 02 -->
+				<!-- Section 03 -->
+				<div class="section">
+					<div class="con">
+						<div class="title_wrap">
+							<h2>02. 일정을 확인해주세요.</h2>
+						</div>
+						<div class="schedule_form">
+							<input type="text" placeholder="성명">
+							<input type="text" placeholder="전화번호">
+							<div class="address_form">
+								<input type="text" placeholder="주소">
+								<button class="btn_gray left address_search" type="button">주소검색</button>
+								<button class="btn_gray right service" type="button">서비스지역</button>
+							</div>
+							<div class="line_wrap visit">
+								<label for="whenVisit">언제 방문 드릴까요?</label>
+								<input id="whenVisit" class="date_picker when_visit" type="text">
+								<input class="time visit_time" type="text">
+							</div>
+							<div class="line_wrap visit_date">
+								<label for="whenVisitItem">언제  박스나  아이템 수거  해 드리길   원하시나요?</label>
+								<ul class="time_selecter">
+									<li class="on">
+										<button class="btn_gray left" type="button">일정선택</button>
+									</li>
+									<li>
+										<button class="btn_gray right" type="button">즉시수거</button>
+									</li>
+								</ul>
+								<input id="whenVisitItem" class="date_picker visit_item" type="text">
+								<input class="time item_time" type="text">
+							</div>
+							<div class="line_wrap half">
+								<p>엘리베이터</p>
+								<ul class="elevator">
+									<li class="on"><button id="elevatorY" class="btn_gray elevator_yes on" type="button">있음</button></li>
+									<li><button id="elevatorN" class="btn_gray elevator_no" type="button">없음</button></li>
+								</ul>
+							</div>
+							<div class="line_wrap half floor">
+								<p>층수</p>
+								<input id="floorSel" type="text">
+								<label for="floorSel">층</label>
+							</div>
+							<div class="inquiry">
+								<h2>요청사항</h2>
+								<textarea name="inquiry" rows="8" cols="80" maxlength="200" placeholder="200자 이내 작성"></textarea>
+							</div>
+							<input type="text" placeholder="프로모션 코드">
+						</div>
+					</div>
+				</div>
+				<!-- //Section 03 -->
+				<a href="06-03수거요청완료.html" class="btn">다음</a>
+			</div>
+			<!-- //Container -->
+
+			<!-- Bottom -->
+			<div id="bottom">
+				<ul id="quick_nav">
+					<li><a href="09활동알림.html"><img src="../images/main/icon_bell.png" alt="활동/알람"></a></li>
+					<li><a href="06-01수거요청.html"><img src="../images/main/icon_mybox.png" alt="수거요청"></a></li>
+					<li><a href="07-01창고보관중.html"><img src="../images/main/icon_storage.png" alt="창고아이템배송요청"></a></li>
+				</ul>
+			</div>
+			<!-- //Bottom -->
+		</div>
+
+		<!-- Pop up: 주소 검색 -->
+		<div class="pop_wrap address_pick">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">주소검색</h2>
+					<h3>도로명 또는 동,명을 입력 해 주세요</h3>
+					<div class="line_wrap">
+						<input type="text" class="search_ipt">
+						<button class="btn_gray" type="button">검색</button>
+					</div>
+
+					<h3>해당 주소지를 선택해 주세요</h3>
+					<div class="address_list">
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+					</div>
+					<button class="btn ok" type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 주소 검색 -->
+
+		<!-- Pop up: 서비스 지역 선택 -->
+		<div class="pop_wrap service_area">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">서비스 지역</h2>
+					<p>현재 일부지역에 한하며, 조만간 서울 전지역 및 경기권으로 확대될 예정입니다.</p>
+					<div class="area_list_wrap">
+						<h3>현재 서비스 지역</h3>
+						<div class="area_list">
+							강남구, 동대문구, 동작구, 마포구, 분당구, 서대문구, 서초구, 성동구, 송파구, 영등포구, 용산구, 종로구, 중구
+						</div>
+					</div>
+					<button class="btn ok" type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 서비스 지역 선택 -->
+
+		<!-- Pop up: 달력 방문 날짜 선택 -->
+		<div class="pop_wrap date_pick">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<div class="calendar">
+						<button class="btn date_select" type="button">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( function() {
+				$(".pop_wrap .calendar").datepicker({
+					altField: ".selected_date",
+					altFormat: "yy-mm-dd",
+					showOtherMonths:true,
+					selectOtherMonths:true,
+					showMonthAfterYear: true,
+					monthNames:["01월","02월","03월","04월","05월","06월","07월","08월","09월","10월","11월","12월"],
+					monthNamesShort:["01","02","03","04","05","06","07","08","09","10","11","12"],
+					dayNames:["일","월","화","수","목","금","토"],
+					dayNamesShort: ["일","월","화","수","목","금","토"]
+				});
+			} );
+		</script>
+		<!-- //Pop up: 달력 방문 날짜 선택 -->
+
+		<!-- Pop up: 방문 시간 선택 -->
+		<div class="pop_wrap time_pick">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">시간을 선택해주세요</h2>
+					<ul class="time_select">
+						<li>10시 ~12시</li>
+						<li>12시~14시</li>
+						<li>14시~16시</li>
+						<li>16시 ~18시</li>
+					</ul>
+					<button class="btn time_ok" type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 방문 시간 선택 -->
+
+		<!-- Pop up: 엘리베이터 없음 -->
+		<div class="pop_wrap pop_floor" style="display:none">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<p>한 층 당 500원의<br />수거비용이 추가 됩니다.</p>
+					<button class="btn ok" type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 엘리베이터 없음 -->
+	</body>
+</html>

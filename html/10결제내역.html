@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>myBox</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.min.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/swiper/swiper.min.css">
+		<script src="../js/swiper/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/jquery-ui.css">
+		<script src="../js/jquery-ui.js"></script>
+	</head>
+	<body class="sub billing">
+		<div id="wrap">
+			<!-- Header -->
+			<div id="header">
+				<a href="javascript:history.back();" class="back_arrow">
+					<img src="../images/icon_backpage.png" alt="뒤로가기">
+				</a>
+				<h1>결제내역</h1>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con">
+						<div class="period">
+							<button class="start_select" type="button"><img src="../images/icon_calendar.png" alt="시작점"></button>
+							~
+							<button class="end_select" type="button"><img src="../images/icon_calendar.png" alt="마지막"></button>
+							<p class="period_ipt">
+								<span class="start" type="text">2018년 1월 1일</span>
+								~
+								<span class="end" type="text">2018년 2월 19일</span>
+							</p>
+						</div>
+						<table class="tb_style">
+							<caption>기간내 결제내역 검색</caption>
+							<colgroup>
+								<col>
+								<col span="2" style="width:26%;">
+								<col span="2" style="width:18%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>구분</th>
+									<th>결제일</th>
+									<th>내역 / 수량</th>
+									<th>결제수단</th>
+									<th>금액</th>
+								</tr>
+							</thead>
+							<tbody>
+								<!-- 검색 내용 없음 -->
+								<tr class="no_search_item">
+									<td colspan="5">
+										기간내 검색된 결제내역이 없습니다.
+									</td>
+								</tr>
+								<!-- //검색 내용 없음 -->
+								<tr>
+									<td>주문</td>
+									<td>2017.12.20</td>
+									<td>다용도박스2</td>
+									<td>삼성카드</td>
+									<td>10,000원</td>
+								</tr>
+								<tr>
+									<td>보관</td>
+									<td>2017.12.20</td>
+									<td>다용도박스2</td>
+									<td>삼성카드</td>
+									<td>10,000원</td>
+								</tr>
+								<tr>
+									<td>보관</td>
+									<td>2017.12.20</td>
+									<td>다용도박스2</td>
+									<td>삼성카드</td>
+									<td>10,000원</td>
+								</tr>
+								<tr>
+									<td>찾음</td>
+									<td>2017.12.20</td>
+									<td>다용도박스2</td>
+									<td>삼성카드</td>
+									<td>10,000원</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- //Section 01 -->
+			</div>
+			<!-- //Container -->
+
+			<!-- Bottom -->
+			<div id="bottom">
+				<ul id="quick_nav">
+					<li><a href="09활동알림.html"><img src="../images/main/icon_bell.png" alt="활동/알람"></a></li>
+					<li><a href="06-01수거요청.html"><img src="../images/main/icon_mybox.png" alt="수거요청"></a></li>
+					<li><a href="07-01창고보관중.html"><img src="../images/main/icon_storage.png" alt="창고아이템배송요청"></a></li>
+				</ul>
+			</div>
+			<!-- //Bottom -->
+		</div>
+
+		<!-- Pop up: 시작 날짜 선택 -->
+		<div class="pop_wrap start_pick">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<div class="calendar">
+						<button class="btn date_select" type="button">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 시작 날짜 선택 -->
+
+		<!-- Pop up: 끝나는 날짜 선택 -->
+		<div class="pop_wrap end_pick">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<div class="calendar">
+						<button class="btn date_select" type="button">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( function() {
+				// 종료
+				$(".end_pick .calendar").datepicker({
+					altField: ".selected_date",
+					altFormat: "yy-mm-dd",
+					showOtherMonths:true,
+					selectOtherMonths:true,
+					showMonthAfterYear: true,
+					monthNames:["01월","02월","03월","04월","05월","06월","07월","08월","09월","10월","11월","12월"],
+					monthNamesShort:["01","02","03","04","05","06","07","08","09","10","11","12"],
+					dayNames:["일","월","화","수","목","금","토"],
+					dayNamesShort: ["일","월","화","수","목","금","토"],
+					maxDate: new Date(),
+					onSelect: function(selected) {
+						// 시작 날짜 선택을 기준으로 선택 가능 날짜
+						if( selected != "" ) {
+							$(".start_pick .calendar").datepicker("option", "maxDate", selected);
+						}
+						// 팝업 종료 후 선택 날짜로 변경
+						dateChange(".end_pick .calendar",".period_ipt .end");
+					}
+				});
+				dateChange(".end_pick .calendar",".period_ipt .end");
+
+				// 시작
+				var payDateSet = new Date();
+				var payMonthSet = payDateSet.setMonth(payDateSet.getMonth()-12);
+
+				$(".start_pick .calendar").datepicker({
+					altField: ".selected_date",
+					altFormat: "yy-mm-dd",
+					showOtherMonths:true,
+					selectOtherMonths:true,
+					showMonthAfterYear: true,
+					monthNames:["01월","02월","03월","04월","05월","06월","07월","08월","09월","10월","11월","12월"],
+					monthNamesShort:["01","02","03","04","05","06","07","08","09","10","11","12"],
+					dayNames:["일","월","화","수","목","금","토"],
+					dayNamesShort: ["일","월","화","수","목","금","토"],
+					onSelect: function(selected) {
+						// 마지막 날짜 선택을 기준으로 선택 가능 날짜
+						if( selected != "" ) {
+							$(".end_pick .calendar").datepicker("option", "minDate", selected);
+						}
+						// 팝업 종료 후 선택 날짜로 변경
+						dateChange(".start_pick .calendar",".period_ipt .start");
+					},
+				}).datepicker("setDate", payDateSet);
+				dateChange(".start_pick .calendar",".period_ipt .start");
+			} );
+
+			// 팝업 종료 후 선택 날짜로 변경
+			function dateChange(selector,ipt){
+				var startGet = $(selector).val();
+				var selectDateArr = startGet.split("/");
+				var year = selectDateArr[2];
+				var month = selectDateArr[0];
+				var day = selectDateArr[1];
+
+				$(ipt).text(year+"년 "+month+"월 "+day+"일");
+			}
+		</script>
+		<!-- //Pop up: 끝나는 날짜 선택 -->
+	</body>
+</html>

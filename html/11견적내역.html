@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>myBox</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.min.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/swiper/swiper.min.css">
+		<script src="../js/swiper/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/jquery-ui.css">
+		<script src="../js/jquery-ui.js"></script>
+	</head>
+	<body class="sub estimate_record">
+		<div id="wrap">
+			<!-- Header -->
+			<div id="header">
+				<a href="javascript:history.back();" class="back_arrow">
+					<img src="../images/icon_backpage.png" alt="뒤로가기">
+				</a>
+				<h1>견적내역</h1>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con">
+						<div class="period">
+							<button class="start_select" type="button"><img src="../images/icon_calendar.png" alt="시작점"></button>
+							~
+							<button class="end_select" type="button"><img src="../images/icon_calendar.png" alt="마지막"></button>
+							<p class="period_ipt">
+								<span class="start" type="text">2017년 12월 1일</span>
+								~
+								<span class="end" type="text">2018년 2월 19일</span>
+								<button type="button" class="select_del">
+									<img src="../images/icon_del.png" alt="선택한 견적 지우기">
+								</button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- //Section 01 -->
+				<!-- Section 02 -->
+				<div class="section">
+					<div class="con">
+						<ul class="box_category estimate_list">
+							<li class="round_wrap">
+								<div class="chk_style">
+									<input id="" type="checkbox">
+									<i></i>
+								</div>
+								<div class="item">
+									<div class="photo_wrap">
+										<span class="multi_box">
+											<!-- <img src="../images/order/img_cloth_box.png" alt="샘플등록이미지"> -->
+										</span>
+										<!--
+											span에 클래스명 붙이면 아이콘 나옵니다.
+											클래스명 없이 사진 이미지 넣으면 고객이 등록한 이미지상태입니다.
+
+											multi_box : 다용도 박스
+											cloth_box : 옷걸이 박스
+											paper_box : 서류 박스
+											golf_box : 골프장비
+											bike_box : 자전거
+											ski_box : 스키/보드
+											carrier_sm_box : 소형커리어
+											carrier_lg_box : 대형커리어
+										 -->
+									</div>
+									<div class="info_area">
+										<h3>다용도 박스</h3>
+										<dl class="item_name">
+											<dt>견적요청 일시</dt><dd>2017.12.05 / 13:35 </dd>
+											<dt>사이즈</dt><dd>150cm X 70cm</dd>
+											<dt>높이</dt><dd>72cm</dd>
+											<dt>무게</dt><dd>15kg</dd>
+											<dt>수량</dt><dd>1개</dd>
+											<dt><strong>견적가</strong></dt><dd><strong>15,000원 / 월</strong></dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li class="round_wrap">
+								<div class="chk_style">
+									<input id="" type="checkbox">
+									<i></i>
+								</div>
+								<div class="item">
+									<div class="photo_wrap">
+										<span>
+											<img src="../images/order/img_cloth_box.png" alt="샘플등록이미지">
+										</span>
+									</div>
+									<div class="info_area">
+										<h3>겨울옷 박스</h3>
+										<dl class="item_name">
+											<dt>견적요청 일시</dt><dd>2017.12.05 / 13:35 </dd>
+											<dt>사이즈</dt><dd>150cm X 70cm</dd>
+											<dt>높이</dt><dd>72cm</dd>
+											<dt>무게</dt><dd>15kg</dd>
+											<dt>수량</dt><dd>1개</dd>
+											<dt><strong>견적가</strong></dt><dd><strong>15,000원 / 월</strong></dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //Section 02 -->
+				<!-- Section 03 -->
+				<div class="section">
+					<div class="con">
+						<dl class="chk_compute">
+							<dt>총 결제금액</dt>
+							<dd>19,500원 /월</dd>
+						</dl>
+					</div>
+				</div>
+				<!-- //Section 03 -->
+				<a href="02-02포장재선택.html" class="btn">주문하기</a>
+			</div>
+			<!-- //Container -->
+
+			<!-- Bottom -->
+			<div id="bottom">
+				<ul id="quick_nav">
+					<li><a href="09활동알림.html"><img src="../images/main/icon_bell.png" alt="활동/알람"></a></li>
+					<li><a href="06-01수거요청.html"><img src="../images/main/icon_mybox.png" alt="수거요청"></a></li>
+					<li><a href="07-01창고보관중.html"><img src="../images/main/icon_storage.png" alt="창고아이템배송요청"></a></li>
+				</ul>
+			</div>
+			<!-- //Bottom -->
+		</div>
+
+		<!-- Pop up: 시작 날짜 선택 -->
+		<div class="pop_wrap start_pick">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<div class="calendar">
+						<button class="btn date_select" type="button">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 시작 날짜 선택 -->
+
+		<!-- Pop up: 끝나는 날짜 선택 -->
+		<div class="pop_wrap end_pick">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<div class="calendar">
+						<button class="btn date_select" type="button">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( function() {
+				// 종료
+				$(".end_pick .calendar").datepicker({
+					altField: ".selected_date",
+					altFormat: "yy-mm-dd",
+					showOtherMonths:true,
+					selectOtherMonths:true,
+					showMonthAfterYear: true,
+					monthNames:["01월","02월","03월","04월","05월","06월","07월","08월","09월","10월","11월","12월"],
+					monthNamesShort:["01","02","03","04","05","06","07","08","09","10","11","12"],
+					dayNames:["일","월","화","수","목","금","토"],
+					dayNamesShort: ["일","월","화","수","목","금","토"],
+					maxDate: new Date(),
+					onSelect: function(selected) {
+						// 시작 날짜 선택을 기준으로 선택 가능 날짜
+						if( selected != "" ) {
+							$(".start_pick .calendar").datepicker("option", "maxDate", selected);
+						}
+						// 팝업 종료 후 선택 날짜로 변경
+						dateChange(".end_pick .calendar",".period_ipt .end");
+					}
+				});
+				dateChange(".end_pick .calendar",".period_ipt .end");
+
+				// 시작
+				var payDateSet = new Date();
+				var payMonthSet = payDateSet.setMonth(payDateSet.getMonth()-12);
+
+				$(".start_pick .calendar").datepicker({
+					altField: ".selected_date",
+					altFormat: "yy-mm-dd",
+					showOtherMonths:true,
+					selectOtherMonths:true,
+					showMonthAfterYear: true,
+					monthNames:["01월","02월","03월","04월","05월","06월","07월","08월","09월","10월","11월","12월"],
+					monthNamesShort:["01","02","03","04","05","06","07","08","09","10","11","12"],
+					dayNames:["일","월","화","수","목","금","토"],
+					dayNamesShort: ["일","월","화","수","목","금","토"],
+					onSelect: function(selected) {
+						// 마지막 날짜 선택을 기준으로 선택 가능 날짜
+						if( selected != "" ) {
+							$(".end_pick .calendar").datepicker("option", "minDate", selected);
+						}
+						// 팝업 종료 후 선택 날짜로 변경
+						dateChange(".start_pick .calendar",".period_ipt .start");
+					},
+				}).datepicker("setDate", payDateSet);
+				dateChange(".start_pick .calendar",".period_ipt .start");
+			} );
+
+			// 팝업 종료 후 선택 날짜로 변경
+			function dateChange(selector,ipt){
+				var startGet = $(selector).val();
+				var selectDateArr = startGet.split("/");
+				var year = selectDateArr[2];
+				var month = selectDateArr[0];
+				var day = selectDateArr[1];
+
+				$(ipt).text(year+"년 "+month+"월 "+day+"일");
+			}
+		</script>
+		<!-- //Pop up: 끝나는 날짜 선택 -->
+	</body>
+</html>

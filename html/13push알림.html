@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>myBox</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.min.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/swiper/swiper.min.css">
+		<script src="../js/swiper/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/jquery-ui.css">
+		<script src="../js/jquery-ui.js"></script>
+	</head>
+	<body class="sub board">
+		<div id="wrap">
+			<!-- Header -->
+			<div id="header">
+				<a href="javascript:history.back();" class="back_arrow">
+					<img src="../images/icon_backpage.png" alt="뒤로가기">
+				</a>
+				<h1>PUSH알림</h1>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con">
+						<!-- ol이면 리스트에 숫자, ul이면 리스트 스타일 점 붙음 -->
+						<dl class="board_list push">
+							<dt>myBOX는 어떻게 이용할 수 있나요?<span class="alert_count">15</span></dt>
+							<dd>
+								<p>3단계만 따라하세요. myBOX를 손쉽게 이용하실 수 있어요!</p>
+								<ol>
+									<li>
+										로그인하신 후에, 필요한 수량의 빈 박스를 신청하세요.
+									</li>
+									<li>
+										myBOX 팀은 튼튼한 플라스틱 박스를 고객님께서 예약하신 시간에 배송해드립니다. 박스가 배송되면 바로 수거(약 20분) 또는 나중에 수거(배송일로부터 2주 이내)를 선택해주시면 됩니다.
+									</li>
+									<li>
+										건네주신 소중한 물건들은 myBOX 안전창고에 보관됩니다.
+									</li>
+								</ol>
+								<p>물건이 필요하실 때는, 언제든지 찾고 싶은 박스와 날짜를 선택해주시면 맡기신 상태 그대로 배달해드립니다.</p>
+							</dd>
+							<dt>보험 적용은 어디까지 가능한가요?</dt>
+							<dd>
+								<p>myBOX의 무료보험은 배송, 보관 중 발생한 손실 및 손상에 대해서만 적용됩니다. 자연재해로 인한 피해 등에는 적용되지 않습니다.</p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<!-- //Section 01 -->
+			</div>
+			<!-- //Container -->
+
+			<!-- Bottom -->
+			<div id="bottom">
+				<ul id="quick_nav">
+					<li><a href="09활동알림.html"><img src="../images/main/icon_bell.png" alt="활동/알람"></a></li>
+					<li><a href="06-01수거요청.html"><img src="../images/main/icon_mybox.png" alt="수거요청"></a></li>
+					<li><a href="07-01창고보관중.html"><img src="../images/main/icon_storage.png" alt="창고아이템배송요청"></a></li>
+				</ul>
+			</div>
+			<!-- //Bottom -->
+		</div>
+
+		<!-- Pop up: 시작 날짜 선택 -->
+		<div class="pop_wrap start_pick">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<div class="calendar">
+						<button class="btn date_select" type="button">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 시작 날짜 선택 -->
+
+		<!-- Pop up: 끝나는 날짜 선택 -->
+		<div class="pop_wrap end_pick">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<div class="calendar">
+						<button class="btn date_select" type="button">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( function() {
+				// 시작
+				$(".start_pick .calendar").datepicker({
+					setDate: "",
+					altField: ".selected_date",
+					altFormat: "yy-mm-dd",
+					showOtherMonths:true,
+					selectOtherMonths:true,
+					showMonthAfterYear: true,
+					monthNames:["01월","02월","03월","04월","05월","06월","07월","08월","09월","10월","11월","12월"],
+					monthNamesShort:["01","02","03","04","05","06","07","08","09","10","11","12"],
+					dayNames:["일","월","화","수","목","금","토"],
+					dayNamesShort: ["일","월","화","수","목","금","토"],
+					onSelect: function(selected) {
+						// 마지막 날짜 선택을 기준으로 선택 가능 날짜
+						if( selected != "" ) {
+							$(".end_pick .calendar").datepicker("option", "minDate", selected);
+						}
+						// 팝업 종료 후 선택 날짜로 변경
+						dateChange(".end_pick .calendar",".period_ipt .end");
+					}
+				});
+				// 종료
+				$(".end_pick .calendar").datepicker({
+					altField: ".selected_date",
+					altFormat: "yy-mm-dd",
+					showOtherMonths:true,
+					selectOtherMonths:true,
+					showMonthAfterYear: true,
+					monthNames:["01월","02월","03월","04월","05월","06월","07월","08월","09월","10월","11월","12월"],
+					monthNamesShort:["01","02","03","04","05","06","07","08","09","10","11","12"],
+					dayNames:["일","월","화","수","목","금","토"],
+					dayNamesShort: ["일","월","화","수","목","금","토"],
+					maxDate: new Date(),
+					onSelect: function(selected) {
+						// 시작 날짜 선택을 기준으로 선택 가능 날짜
+						if( selected != "" ) {
+							$(".start_pick .calendar").datepicker("option", "maxDate", selected);
+						}
+						// 팝업 종료 후 선택 날짜로 변경
+						dateChange(".end_pick .calendar",".period_ipt .end");
+					}
+				});
+			} );
+
+			// 팝업 종료 후 선택 날짜로 변경
+			function dateChange(selector,ipt){
+				var startGet = $(selector).val();
+				var selectDateArr = startGet.split("/");
+				var year = selectDateArr[2];
+				var month = selectDateArr[0];
+				var day = selectDateArr[1];
+
+				$(ipt).text(year+"년 "+month+"월 "+day+"일");
+			}
+		</script>
+		<!-- //Pop up: 끝나는 날짜 선택 -->
+	</body>
+</html>

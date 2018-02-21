@@ -1,0 +1,76 @@
+@charset 'utf-8';
+.ui-datepicker-header{
+	position: relative;
+	text-align: center;
+}
+.ui-datepicker-prev{
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	width:24px;
+	height:24px;
+	margin-right:50px;
+	background: url('../images/calen_left.png') no-repeat center center/7px;
+	text-indent: -999em;
+}
+.ui-datepicker-next{
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	width:24px;
+	height:24px;
+	margin-left:50px;
+	background: url('../images/calen_right.png') no-repeat center center/7px;
+	text-indent: -999em;
+}
+.ui-datepicker-title{
+	position: absolute;
+	top:0;
+	width:100%;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+}
+.ui-datepicker-year::after{
+	content:'년';
+	margin-right:5px;
+}
+
+.ui-datepicker-calendar{
+	width:100%;
+	margin-top:5%;
+}
+.ui-datepicker-calendar th,
+.ui-datepicker-calendar td{
+	height:32px;
+	text-align: center;
+}
+.ui-datepicker-calendar th>span,
+.ui-datepicker-calendar td>span,
+.ui-state-default{
+	font-size: 12px;
+	color:#777;
+}
+.ui-datepicker-calendar th>span{
+	color:#343434;
+	font-weight: bold;
+}
+
+.ui-priority-secondary{
+	visibility: hidden;
+}
+.ui-datepicker-current-day .ui-state-active{
+	display: inline-block;
+	vertical-align: sub;
+	width:20px;
+	height:20px;
+	border-radius: 100%;
+	background: #f25063;
+	color:#fff;
+	text-align: center;
+	line-height:20px;
+}
+
+.ui-datepicker-calendar td.ui-state-disabled>span{
+	color:#ccc;
+}

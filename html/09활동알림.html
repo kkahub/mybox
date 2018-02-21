@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>myBox</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.min.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/swiper/swiper.min.css">
+		<script src="../js/swiper/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/jquery-ui.css">
+		<script src="../js/jquery-ui.js"></script>
+	</head>
+	<body class="sub notice">
+		<div id="wrap">
+			<!-- Header -->
+			<div id="header">
+				<a href="javascript:history.back();" class="back_arrow">
+					<img src="../images/icon_backpage.png" alt="뒤로가기">
+				</a>
+				<h1>활동 / 알림</h1>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con">
+						<ul class="notice_list">
+							<li class="round_wrap">
+								<h2 class="notice_title">배송일정</h2>
+								<p class="notice_con">고객님 방문 일정은 7월 21일 금요일, 10:00 ~ 12:00 입니다.</p>
+							</li>
+							<li class="round_wrap">
+								<h2 class="notice_title">수거일정</h2>
+								<p class="notice_con">고객님 방문 일정은 7월 21일 금요일, 10:00 ~ 12:00 입니다.</p>
+							</li>
+							<li class="round_wrap">
+								<h2 class="notice_title">프로모션</h2>
+								<p class="notice_con">프로모션 코드 : SAVE5 프로모션 코드가 적용되어 5% 할인이 다음 주문에 적용됩니다.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //Section 01 -->
+			</div>
+			<!-- //Container -->
+
+			<!-- Bottom -->
+			<div id="bottom">
+				<ul id="quick_nav">
+					<li><a href="09활동알림.html"><img src="../images/main/icon_bell.png" alt="활동/알람"></a></li>
+					<li><a href="06-01수거요청.html"><img src="../images/main/icon_mybox.png" alt="수거요청"></a></li>
+					<li><a href="07-01창고보관중.html"><img src="../images/main/icon_storage.png" alt="창고아이템배송요청"></a></li>
+				</ul>
+			</div>
+			<!-- //Bottom -->
+		</div>
+
+		<!-- Pop up: 카메라 -->
+		<div class="pop_wrap camera">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">마이박스</h2>
+					<button class="btn" type="button">사진활영하여 등록</button>
+					<button class="btn" type="button">사진앨범에서 등록</button>
+					<button class="btn_gray cancle" type="button">취소</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 카메라 -->
+
+		<!-- Pop up: 날짜와 시간 선택 -->
+		<div class="pop_wrap date_tiem_pick">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<ul class="date_time_menu">
+						<li class="line_wrap left on">
+							<input id="whenVisit" class="date_picker when_visit" type="text">
+						</li>
+						<li class="line_wrap right">
+							<input class="time visit_time" type="text">
+						</li>
+					</ul>
+					<ul class="date_time_con">
+						<li>
+							<div class="calendar">
+							</div>
+						</li>
+						<li>
+							<ul class="time_select">
+								<li>10시 ~12시</li>
+								<li>12시~14시</li>
+								<li>14시~16시</li>
+								<li>16시 ~18시</li>
+							</ul>
+						</li>
+					</ul>
+					<button class="btn ok" type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( function() {
+				$(".pop_wrap .calendar").datepicker({
+					altField: ".selected_date",
+					altFormat: "yy-mm-dd",
+					showOtherMonths:true,
+					selectOtherMonths:true,
+					showMonthAfterYear: true,
+					monthNames:["01월","02월","03월","04월","05월","06월","07월","08월","09월","10월","11월","12월"],
+					monthNamesShort:["01","02","03","04","05","06","07","08","09","10","11","12"],
+					dayNames:["일","월","화","수","목","금","토"],
+					dayNamesShort: ["일","월","화","수","목","금","토"]
+				});
+			} );
+		</script>
+		<!-- //Pop up: 날짜와 시간 선택 -->
+
+		<!-- Pop up: 수거비용 안내 -->
+		<div class="pop_wrap pickup_price">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">수거비용 안내</h2>
+					<p>마이박스에서는 고객님의 집 상황에 따라<br>수거비용이 발생합니다.</p>
+					<div class="pickup_price_info">
+						<h3>수거비용 산정방식</h3>
+						<p><strong>1BOX / 1개 층당 500원</strong></p>
+						<p>예시: 다용도 박스 2개를 2층에서<br>주문시 발생수거비용 4000원</p>
+					</div>
+					<button class="btn ok" type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 수거비용 안내 -->
+	</body>
+</html>

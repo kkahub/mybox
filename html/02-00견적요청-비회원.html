@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>myBox</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.min.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/swiper/swiper.min.css">
+		<script src="../js/swiper/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/jquery-ui.css">
+		<script src="../js/jquery-ui.js"></script>
+	</head>
+	<body class="sub estimate">
+		<div id="wrap">
+			<!-- Header -->
+			<div id="header">
+				<a href="javascript:history.back();" class="back_arrow">
+					<img src="../images/icon_backpage.png" alt="뒤로가기">
+				</a>
+				<h1>견적요청</h1>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con notice_info">
+						<div class="notice_info_wrap clearfix">
+							<h2 class="headline">견적요청 안내</h2>
+							<ul class="list">
+								<li>맡기고자 하는 아이템명 사이즈를 가능한 정확하게 기입해 주십시오.</li>
+								<li>아이템의 사진을 찍어서 등록해 주시면 보다 정확한 견적이 가능합니다.</li>
+								<li>한 사람이 운반할 수 있는 아이템이라면 모두 가능 합니다.</li>
+								<li>견적 요청시 24시간 이내에 견적을 산정해 드립니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //Section 01 -->
+				<!-- Section 02 -->
+				<div class="section">
+					<div class="con">
+						<div class="title_wrap">
+							<h2 class="headline">아이템</h2>
+							<button class="form_add" type="button">
+								<img src="../images/icon_from_add.png" alt="입력 폼 추가">
+							</button><!-- 클릭 시 estimate_form 부분 복사 추가 -->
+						</div>
+						<div class="estimate_form">
+							<div class="round_wrap">
+								<div class="left">
+									<div class="line_wrap camera">
+										<div class="camera_wrap">
+											<!-- <img src="../images/order/img_cloth_box.png" alt="샘플"> -->
+											<button class="btn_camera" type="button"></button>
+										</div>
+										<input type="text" name="" value="" placeholder="물품명 입력 ( 예:텐트 )">
+									</div>
+									<dl class="line_wrap size">
+										<dt>사이즈</dt>
+										<dd class="after_x"><input type="text" placeholder="가로"></dd>
+										<dd class="after_cm"><input type="text" placeholder="세로"></dd>
+									</dl>
+									<dl class="line_wrap weight">
+										<dt>무게</dt>
+										<dd class="after_kg"><input type="text"></dd>
+									</dl>
+									<dl class="line_wrap height">
+										<dt>높이</dt>
+										<dd class="after_cm"><input type="text"></dd>
+									</dl>
+								</div>
+								<div class="right counter">
+									<button class="arrow_up" type="button">
+										<img src="../images/count_up_sm.png" alt="갯수 추가">
+									</button>
+									<span class="count">1</span>
+									<button class="arrow_down" type="button">
+										<img src="../images/count_down_sm.png" alt="갯수 감소">
+									</button>
+								</div>
+							</div>
+							<div class="user_info">
+								<div class="line_wrap">
+									<input type="text" class="name_ipt" placeholder="기업명/성명">
+								</div>
+								<div class="line_wrap email">
+									<input id="" value="" name="emailIpt1" class="email_ipt1 en" type="text" title="이메일ID입력">
+									<span class="at">@</span>
+									<input id="" value="" name="emailIpt2" class="email_ipt2 en" type="text" title="이메일서비스입력" />
+									<select id="selMail" name="selMail" class="sel_mail en">
+										<option value="self" selected="selected">직접 입력</option>
+										<option value="naver.com">naver.com</option>
+										<option value="nate.com">nate.com</option>
+									</select>
+									<input name='emailIpt' id="" value=""  class="email_ipt en" type="hidden">
+									<p class="notice">* 입력하신 이메일로  견적서를  보내 드립니다.</p>
+								</div>
+								<div class="line_wrap">
+									<input type="text" class="phone_ipt" placeholder="전화번호">
+								</div>
+							</div>
+							<div class="inquiry">
+								<h2>문의사항</h2>
+								<textarea name="inquiry" rows="8" cols="80" maxlength="200" placeholder="200자 이내 작성"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //Section 02 -->
+				<div class="btn_area relative">
+					<button type="button" class="btn nomember_estimate">견적요청</button>
+				</div>
+			</div>
+			<!-- //Container -->
+
+			<!-- Bottom -->
+			<div id="bottom">
+				<ul id="quick_nav">
+					<li><a href="09활동알림.html"><img src="../images/main/icon_bell.png" alt="활동/알람"></a></li>
+					<li><a href="06-01수거요청.html"><img src="../images/main/icon_mybox.png" alt="수거요청"></a></li>
+					<li><a href="07-01창고보관중.html"><img src="../images/main/icon_storage.png" alt="창고아이템배송요청"></a></li>
+				</ul>
+			</div>
+			<!-- //Bottom -->
+		</div>
+
+		<!-- Pop up: 카메라 -->
+		<div class="pop_wrap camera">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">마이박스</h2>
+					<button class="btn" type="button">사진활영하여 등록</button>
+					<button class="btn" type="button">사진앨범에서 등록</button>
+					<button class="btn_gray" type="button">취소</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 카메라 -->
+
+		<!-- Pop up: 견적요청 버튼 -->
+		<div class="pop_wrap fin_btn">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">마이박스</h2>
+					<p>견적요청이 접수 되었습니다.</p>
+					<p>
+						빠른 시간내 견적을 산정해 드리겠습니다.<br />
+						마이페이지의 견적내역에서.<br />
+						확인하실 수 있습니다.
+					</p>
+					<a href="02-01박스주문-규격.html" class="btn ok">확인</a>
+					<!-- <a href="02-01박스주문-비규격.html" class="btn">견적요청</a> -->
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 견적요청 버튼 -->
+	</body>
+</html>

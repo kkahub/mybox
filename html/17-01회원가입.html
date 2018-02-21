@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>myBox</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.min.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/swiper/swiper.min.css">
+		<script src="../js/swiper/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/jquery-ui.css">
+		<script src="../js/jquery-ui.js"></script>
+	</head>
+	<body class="sub join">
+		<div id="wrap">
+			<!-- Header -->
+			<div id="header">
+				<a href="javascript:history.back();" class="back_arrow">
+					<img src="../images/icon_backpage.png" alt="뒤로가기">
+				</a>
+				<h1>회원가입</h1>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con">
+						<p class="notice_essential">*필수 입력 항목</p>
+						<div class="title_wrap">
+							<h2>* 아이디</h2>
+						</div>
+						<div class="schedule_form">
+							<div class="line_wrap email">
+								<input id="" value="" name="emailIpt1" class="email_ipt1 en" type="text" title="이메일ID입력" required="">
+								<span class="at">@</span>
+								<input id="" value="" name="emailIpt2" class="email_ipt2 en" type="text" title="이메일서비스입력">
+								<select id="selMail" name="selMail" class="sel_mail en">
+									<option value="self" selected="selected">직접 입력</option>
+									<option value="naver.com">naver.com</option>
+									<option value="nate.com">nate.com</option>
+								</select>
+								<input name="emailIpt" id="" value="" class="email_ipt en" type="hidden" required="">
+							</div>
+						</div>
+						<div class="title_wrap">
+							<h2>* 비밀번호</h2>
+						</div>
+						<input type="password" class="pass" placeholder="6~12자 이내 숫자, 알파벳">
+						<input type="password" class="pass_confirm" placeholder="비밀번호 확인">
+					</div>
+				</div>
+				<!-- //Section 01 -->
+				<!-- Section 02 -->
+				<div class="section">
+					<div class="con">
+						<div class="another_login">
+							<a class="btn_sns" href="#"><span class="naver"></span>네이버 계정으로 로그인하기</a>
+							<a class="btn_sns" href="#"><span class="facebook"></span>페이스북 계정으로 로그인하기</a>
+							<a class="btn_sns" href="#"><span class="kakao"></span>카카오톡 계정으로 로그인하기</a>
+						</div>
+					</div>
+				</div>
+				<!-- //Section 02 -->
+				<!-- Section 03 -->
+				<div class="section">
+					<div class="con">
+						<div class="title_wrap">
+							<h2>전화번호</h2>
+						</div>
+						<div class="schedule_form">
+							<input type="text" placeholder="전화번호">
+						</div>
+						<div class="title_wrap">
+							<h2>배송지 주소</h2>
+						</div>
+						<div class="schedule_form">
+							<div class="address_form">
+								<input class="address1" type="text" placeholder="주소">
+								<button class="btn_gray right address_search" type="button">주소검색</button>
+								<input class="detail_address" type="text" placeholder="상세주소">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //Section 03 -->
+				<a href="01메인화면.html" class="btn">확인</a>
+			</div>
+			<!-- //Container -->
+
+			<!-- Bottom -->
+			<div id="bottom">
+				<ul id="quick_nav">
+					<li><a href="09활동알림.html"><img src="../images/main/icon_bell.png" alt="활동/알람"></a></li>
+					<li><a href="06-01수거요청.html"><img src="../images/main/icon_mybox.png" alt="수거요청"></a></li>
+					<li><a href="07-01창고보관중.html"><img src="../images/main/icon_storage.png" alt="창고아이템배송요청"></a></li>
+				</ul>
+			</div>
+			<!-- //Bottom -->
+		</div>
+
+		<!-- Pop up: 주소 검색 -->
+		<div class="pop_wrap address_pick">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">주소검색</h2>
+					<h3>도로명 또는 동,명을 입력 해 주세요</h3>
+					<div class="line_wrap">
+						<input type="text" class="search_ipt">
+						<button class="btn_gray" type="button">검색</button>
+					</div>
+
+					<h3>해당 주소지를 선택해 주세요</h3>
+					<div class="address_list">
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+					</div>
+					<button class="btn ok" type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 주소 검색 -->
+	</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>myBox</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.min.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/swiper/swiper.min.css">
+		<script src="../js/swiper/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/jquery-ui.css">
+		<script src="../js/jquery-ui.js"></script>
+	</head>
+	<body class="sub order">
+		<div id="wrap">
+			<!-- Nav -->
+			<div id="nav">
+				<button class="burger" type="button"><img src="../images/tab_button.png" alt="메뉴"></button>
+				<div class="nav_header">
+					<h1><a href="01메인화면.html"><img class="logo" src="../images/logo.png" alt="myBox"></a></h1>
+				</div>
+				<div class="gnb_wrap">
+					<div class="user_info">
+						<div class="user_state">
+							<span class="user">Gami</span>님 로그인 중
+							<!-- <a class="login_wrap" href="index.html"><img src="../images/login.png" alt="로그인"></a> -->
+							<a class="login_wrap" href="#로그아웃"><img src="../images/logout.png" alt="로그아웃"></a>
+						</div>
+
+						<a href="08박스이력.html">
+							<dl class="order_record">
+								<dt>
+									<div class="record_count">
+										<img src="../images/order_record.png" alt="박스카운트">
+										<span class="alert_count">5</span>
+									</div>
+									<p>박스이력</p>
+								</dt>
+								<dd>
+									<dl class="detail_info">
+										<dt>현재 보관 중 아이템</dt>
+										<dd><em>10건</em></dd>
+										<dt>현재 보관 요금</dt>
+										<dd><em>7,000원</em></dd>
+										<dt>비용청구일</dt>
+										<dd>2018년 2월 2일</dd>
+									</dl>
+								</dd>
+							</dl>
+						</a>
+					</div>
+					<ul class="gnb">
+						<li><a href="17-02회원정보수정.html">내 정보변경</a></li>
+						<li><a href="09활동알림.html">활동/알림<span class="alert_count">12</span></a></li>
+						<li><a href="10결제내역.html">결제내역</a></li>
+						<li><a href="11견적내역.html">견적내역</a></li>
+						<li><a href="12FAQ.html">FAQ</a></li>
+						<li><a href="13push알림.html">PUSH 알림</a></li>
+						<li><a href="14이벤트.html">이벤트</a></li>
+						<li><a href="15설정.html">설정</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //Nav -->
+			<!-- Header -->
+			<div id="header">
+				<h1><a href="01메인화면.html"><img class="logo" src="../images/logo.png" alt="myBox"></a></h1>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con">
+						<ul class="tab_menu">
+							<li class="on">규격</li>
+							<li><a href="02-01박스주문-비규격.html">비규격</a></li>
+						</ul>
+						<div class="tab_con">
+							<ul class="step_state">
+								<li class="on">step1</li>
+								<li>step2</li>
+								<li>step3</li>
+								<li>step4</li>
+								<li>step5</li>
+							</ul>
+							<h2>01. 박스 주문하기</h2>
+							<ul class="box_category step1_order">
+								<li class="multi_box round_wrap">
+									<h3>다용도 박스 <span class="price">7,500원 / 월</span></h3>
+									<p class="category_total en">15,000</p>
+									<div class="counter">
+										<button class="arrow_up" type="button">
+											<img class="big"  src="../images/count_up_sm.png" alt="갯수 추가">
+										</button>
+										<span class="count">0</span>
+										<button class="arrow_down" type="button">
+											<img class="big" src="../images/count_down_sm.png" alt="갯수 감소">
+										</button>
+									</div>
+									<button class="category_info" type="button"><img src="../images/order/icon_description.png" alt="다용도 박스 정보"></button>
+									<dl class="overwrap">
+										<dt>다용도 박스</dt>
+										<dd>무료 배송 & 무료 수거</dd>
+										<dd>배상책임 보험 가입기간 제한없음</dd>
+										<dd>
+											<dl><dt>박스 찾을 때</dt><dd>2,000원</dd></dl>
+										</dd>
+										<dd>
+											<dl>
+												<dt>수납 예시</dt>
+												<dd>신발 25켤레 / 티셔츠 85벌 / 책 100권</dd>
+											</dl>
+										</dd>
+									</dl>
+								</li>
+								<li class="cloth_box round_wrap">
+									<h3>옷걸이 박스 <span class="price">15,000원 / 월</span></h3>
+									<p class="category_total en">15,000</p>
+									<div class="counter">
+										<button class="arrow_up" type="button">
+											<img class="big"  src="../images/count_up_sm.png" alt="갯수 추가">
+										</button>
+										<span class="count">0</span>
+										<button class="arrow_down" type="button">
+											<img class="big" src="../images/count_down_sm.png" alt="갯수 감소">
+										</button>
+									</div>
+									<button class="category_info" type="button"><img src="../images/order/icon_description.png" alt="옷걸이 박스 정보"></button>
+									<dl class="overwrap">
+										<dt>옷걸이 박스</dt>
+										<dd>무료 배송 & 무료 수거</dd>
+										<dd>배상책임 보험 가입기간 제한없음</dd>
+										<dd>
+											<dl><dt>박스 찾을 때</dt><dd>2,000원</dd></dl>
+										</dd>
+										<dd>잠금장치 제공</dd>
+										<dd>
+											<dl>
+												<dt>수납 예시</dt>
+												<dd>원피스 혹은 셔츠 20 벌 / 정장 15 벌 / 겨울 코트 10 벌</dd>
+											</dl>
+										</dd>
+									</dl>
+								</li>
+								<li class="paper_box round_wrap">
+									<h3>서류 박스 <span class="price">6,000원 / 월</span></h3>
+									<p class="category_total en">6,000</p>
+									<div class="counter">
+										<button class="arrow_up" type="button">
+											<img class="big"  src="../images/count_up_sm.png" alt="갯수 추가">
+										</button>
+										<span class="count">0</span>
+										<button class="arrow_down" type="button">
+											<img class="big" src="../images/count_down_sm.png" alt="갯수 감소">
+										</button>
+									</div>
+									<button class="category_info" type="button"><img src="../images/order/icon_description.png" alt="옷걸이 박스 정보"></button>
+									<dl class="overwrap">
+										<dt>서류 박스</dt>
+										<dd>무료 배송 & 무료 수거</dd>
+										<dd>배상책임 보험 가입기간 제한없음</dd>
+										<dd>
+											<dl><dt>박스 찾을 때</dt><dd>2,000원</dd></dl>
+										</dd>
+										<dd>
+											<dl>
+												<dt>수납 예시</dt>
+												<dd>3,000 장의 A4 용지 혹은 6 개의 바인더</dd>
+											</dl>
+										</dd>
+									</dl>
+								</li>
+								<li class="golf_box round_wrap">
+									<h3>골프 장비<span class="price">6,000원 / 월</span></h3>
+									<p class="category_total en">6,000</p>
+									<div class="counter">
+										<button class="arrow_up" type="button">
+											<img class="big"  src="../images/count_up_sm.png" alt="갯수 추가">
+										</button>
+										<span class="count">0</span>
+										<button class="arrow_down" type="button">
+											<img class="big" src="../images/count_down_sm.png" alt="갯수 감소">
+										</button>
+									</div>
+									<button class="category_info" type="button"><img src="../images/order/icon_description.png" alt="옷걸이 박스 정보"></button>
+									<dl class="overwrap">
+										<dt>골프 장비</dt>
+										<dd>무료 배송 & 무료 수거</dd>
+										<dd>배상책임 보험 가입기간 제한없음</dd>
+										<dd>
+											<dl><dt>장비 찾을 때</dt><dd>2,000원</dd></dl>
+										</dd>
+									</dl>
+								</li>
+								<li class="bike_box round_wrap">
+									<h3>자전거<span class="price">10,000원 / 월</span></h3>
+									<p class="category_total en">10,000</p>
+									<div class="counter">
+										<button class="arrow_up" type="button">
+											<img class="big"  src="../images/count_up_sm.png" alt="갯수 추가">
+										</button>
+										<span class="count">0</span>
+										<button class="arrow_down" type="button">
+											<img class="big" src="../images/count_down_sm.png" alt="갯수 감소">
+										</button>
+									</div>
+									<button class="category_info" type="button"><img src="../images/order/icon_description.png" alt="옷걸이 박스 정보"></button>
+									<dl class="overwrap">
+										<dt>자전거</dt>
+										<dd>무료 배송 & 무료 수거</dd>
+										<dd>배상책임 보험 가입기간 제한없음</dd>
+										<dd>
+											<dl><dt>자전거 찾을 때</dt><dd>2,000원</dd></dl>
+										</dd>
+									</dl>
+								</li>
+								<li class="ski_box round_wrap">
+									<h3>스키/보드<span class="price">10,000원 / 월</span></h3>
+									<p class="category_total en">10,000</p>
+									<div class="counter">
+										<button class="arrow_up" type="button">
+											<img class="big"  src="../images/count_up_sm.png" alt="갯수 추가">
+										</button>
+										<span class="count">0</span>
+										<button class="arrow_down" type="button">
+											<img class="big" src="../images/count_down_sm.png" alt="갯수 감소">
+										</button>
+									</div>
+									<button class="category_info" type="button"><img src="../images/order/icon_description.png" alt="옷걸이 박스 정보"></button>
+									<dl class="overwrap">
+										<dt>스키/보드</dt>
+										<dd>무료 배송 & 무료 수거</dd>
+										<dd>배상책임 보험 가입기간 제한없음</dd>
+										<dd><dl><dt>장비 찾을 때</dt><dd>2,000원</dd></dl></dd>
+									</dl>
+								</li>
+								<li class="carrier_sm_box round_wrap">
+									<h3>소형커리어<span class="price">7,500원 / 월</span></h3>
+									<p class="category_total en">7,500</p>
+									<div class="counter">
+										<button class="arrow_up" type="button">
+											<img class="big"  src="../images/count_up_sm.png" alt="갯수 추가">
+										</button>
+										<span class="count">0</span>
+										<button class="arrow_down" type="button">
+											<img class="big" src="../images/count_down_sm.png" alt="갯수 감소">
+										</button>
+									</div>
+									<button class="category_info" type="button"><img src="../images/order/icon_description.png" alt="옷걸이 박스 정보"></button>
+									<dl class="overwrap">
+										<dt>소형커리어</dt>
+										<dd>무료 배송 & 무료 수거</dd>
+										<dd>배상책임 보험 가입기간 제한없음</dd>
+										<dd>
+											<dl><dt>캐리어 찾을 때</dt><dd>2,000원</dd></dl>
+										</dd>
+										<dd>
+											<dl><dt>대상 캐리어</dt><dd>18인치 이하 캐리어</dd></dl>
+										</dd>
+									</dl>
+								</li>
+								<li class="carrier_lg_box round_wrap">
+									<h3>중/대형커리어<span class="price">12,000원 / 월</span></h3>
+									<p class="category_total en">12,000</p>
+									<div class="counter">
+										<button class="arrow_up" type="button">
+											<img class="big"  src="../images/count_up_sm.png" alt="갯수 추가">
+										</button>
+										<span class="count">0</span>
+										<button class="arrow_down" type="button">
+											<img class="big" src="../images/count_down_sm.png" alt="갯수 감소">
+										</button>
+									</div>
+									<button class="category_info" type="button"><img src="../images/order/icon_description.png" alt="옷걸이 박스 정보"></button>
+									<dl class="overwrap">
+										<dt>중/대형 커리어</dt>
+										<dd>무료 배송 & 무료 수거</dd>
+										<dd>배상책임 보험 가입기간 제한없음</dd>
+										<dd>
+											<dl><dt>캐리어 찾을 때</dt><dd>2,000원</dd></dl>
+										</dd>
+										<dd>
+											<dl><dt>대상 캐리어</dt><dd>20인치 이하 캐리어</dd></dl>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //Section 01 -->
+				<a href="02-02포장재선택.html" class="btn">다음 </a>
+			</div>
+			<!-- //Container -->
+
+			<!-- Bottom -->
+			<div id="bottom">
+				<ul id="quick_nav">
+					<li><a href="09활동알림.html"><img src="../images/main/icon_bell.png" alt="활동/알람"></a></li>
+					<li><a href="06-01수거요청.html"><img src="../images/main/icon_mybox.png" alt="수거요청"></a></li>
+					<li><a href="07-01창고보관중.html"><img src="../images/main/icon_storage.png" alt="창고아이템배송요청"></a></li>
+				</ul>
+			</div>
+			<!-- //Bottom -->
+		</div>
+	</body>
+</html>

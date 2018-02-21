@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>myBox</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.min.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/swiper/swiper.min.css">
+		<script src="../js/swiper/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/jquery-ui.css">
+		<script src="../js/jquery-ui.js"></script>
+	</head>
+	<body class="sub pickup">
+		<div id="wrap">
+			<!-- Header -->
+			<div id="header">
+				<a href="javascript:history.back();" class="back_arrow">
+					<img src="../images/icon_backpage.png" alt="뒤로가기">
+				</a>
+				<h1><a href="01메인화면.html"><img class="logo" src="../images/logo.png" alt="myBox"></a></h1>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con">
+						<ul class="step_state">
+							<li>step1</li>
+							<li>step2</li>
+							<li>step3</li>
+							<li class="on">step4</li>
+							<li>step5</li>
+						</ul>
+						<h2 class="title_wrap">04. 배송요청 확인</h2>
+					</div>
+				</div>
+				<!-- //Section 01 -->
+				<!-- Section 02 -->
+				<div class="section">
+					<div class="con">
+						<h2 class="title_wrap">배송 요청 아이템</h2>
+						<ul class="box_category">
+							<li class="round_wrap">
+								<h3><span class="multi_box"></span>다용도 박스</h3>
+								<!--
+									span에 클래스명 붙이면 아이콘 나옵니다.
+									multi_box : 다용도 박스
+									cloth_box : 옷걸이 박스
+									paper_box : 서류 박스
+									golf_box : 골프장비
+									bike_box : 자전거
+									ski_box : 스키/보드
+									carrier_sm_box : 소형커리어
+									carrier_lg_box : 대형커리어
+								 -->
+								<div class="item">
+									<div class="camera_wrap">
+										<!-- <img src="../images/order/img_cloth_box.png" alt="샘플등록이미지"> -->
+										<button class="btn_camera" type="button"></button>
+									</div>
+									<dl class="item_name">
+										<dt>아이템명</dt><dd>아이들 장난감</dd>
+										<dt>보관일</dt><dd>2018년 1월03일</dd>
+										<dt>현재비용</dt><dd><strong>12,000원</strong></dd>
+									</dl>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //Section 02 -->
+				<!-- Section 03 -->
+				<div class="section">
+					<div class="con">
+						<h2 class="title_wrap">배송 희망 일시</h2>
+						<ul class="order_info">
+							<li>
+								2018년 1월 3일 <strong> 12:00~14:00</strong>
+							</li>
+							<li>
+								같은 지역 배송 할인 적용 대상
+							</li>
+							<li>
+								<dl><dt>배송요금</dt><dd><strong>2,000원</strong> <small>50% 할인적용</small></dd></dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //Section 03 -->
+				<!-- Section 04 -->
+				<div class="section">
+					<div class="con">
+						<h2 class="title_wrap">배송 지 주소</h2>
+						<ul class="order_info">
+							<li>
+								서울시 마포구 동교동 212-23 2층
+							</li>
+							<li>
+								2층 / 엘리베이터 없음
+							</li>
+							<li>
+								<dl><dt>계단요금 2층</dt><dd><strong>1,000원</strong></dd></dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //Section 04 -->
+				<!-- Section 05 -->
+				<div class="section">
+					<div class="con">
+						<h2 class="title_wrap">배송 지 주소</h2>
+						<ul class="order_info storage">
+							<li>
+								<dl><dt>보관일</dt><dd>총 <strong>30</strong>일</dd></dl>
+								<dl><dt>보관요금</dt><dd>총 <strong>12,000</strong>원</dd></dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //Section 05 -->
+				<!-- Section 06 -->
+				<div class="section">
+					<div class="con">
+						<ul class="order_info gray">
+							<li>
+								<dl><dt>총 비용 합계</dt><dd><strong>15,000</strong>원</dd></dl>
+							</li>
+							<li>
+								<dl><dt>결제하실 금액</dt><dd><strong>7,500원</strong> <small>프로모션 할인 50% 적용</small></dd></dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //Section 06 -->
+				<div class="btn_area relative">
+					<button class="btn payment" type="button">결제</button>
+				</div>
+			</div>
+			<!-- //Container -->
+
+			<!-- Bottom -->
+			<div id="bottom">
+				<ul id="quick_nav">
+					<li><a href="09활동알림.html"><img src="../images/main/icon_bell.png" alt="활동/알람"></a></li>
+					<li><a href="06-01수거요청.html"><img src="../images/main/icon_mybox.png" alt="수거요청"></a></li>
+					<li><a href="07-01창고보관중.html"><img src="../images/main/icon_storage.png" alt="창고아이템배송요청"></a></li>
+				</ul>
+			</div>
+			<!-- //Bottom -->
+		</div>
+
+		<!-- Pop up: 카메라 -->
+		<div class="pop_wrap camera">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">마이박스</h2>
+					<button class="btn" type="button">사진활영하여 등록</button>
+					<button class="btn" type="button">사진앨범에서 등록</button>
+					<button class="btn_gray cancle" type="button">취소</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 카메라 -->
+
+		<!-- Pop up: 결제완료 -->
+		<div class="pop_wrap payment_fin">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">결제중입니다.</h2>
+					<p>결제완료는 업무시간<br />(평일 : 10:00~18:00)에 가능합니다.</p>
+					<a href="07-05보관아이템배송완료.html" class="btn ok">확인</a>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 결제완료 -->
+	</body>
+</html>

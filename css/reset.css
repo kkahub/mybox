@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NSR';
+    src: url('../font/NSR.eot');
+    src: url('../font/NSR.eot?#iefix') format('embedded-opentype'),
+		    url('../font/NSR.woff2') format('woff2'),
+            local(※), url('../font/NSR.woff') format('woff'),
+            url('../font/NSR.ttf') format('truetype'),
+            url('../font/NSR.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto.eot');
+    src: url('../font/Roboto.eot?#iefix') format('embedded-opentype'),
+		    url('../font/Roboto.woff2') format('woff2'),
+            local(※), url('../font/Roboto.woff') format('woff'),
+            url('../font/Roboto.ttf') format('truetype'),
+            url('../font/Roboto.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    letter-spacing: -.1em;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	color: #171717;
+	font: normal 16px/130% 'NSR';
+	font-family:"NSR", 돋움;
+	letter-spacing: -.03em;
+}
+
+div, p, ol, ul, li, img, a, h1, h2, h3, h4, h5, h6, form, span, iframe,
+	dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+	font-family: "NSR", 돋움;
+	text-align: left;
+	line-height: 130%;
+	font-size: 16px;
+}
+
+div, ul, ol {
+	list-style: none;
+}
+
+big, small {
+	font-size: normal 16px/18px 'NSR';
+	color: #171717;
+}
+
+table, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-spacing: 0px;
+	font-size: 16px;
+	border-collapse: collapse;
+	text-align: left;
+	font-weight: normal;
+}
+
+legend, caption {
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+img {
+	border: 0px;
+	vertical-align: middle;
+}
+
+em {
+	font-style: normal;
+	color: #d8021b;
+}
+
+textarea {
+	outline: 0;
+	resize: none;
+	overflow-y: auto;
+	box-sizing:border-box; outline:0;
+	width:100%;
+    height:85px;
+    margin-right:10px;
+	border:1px solid #ddd;
+	padding: 6px 10px;
+	font-family: "NSR", 돋움;
+	font-size: 15px; color: #000;
+}
+
+a {
+	text-decoration: none;
+	color: #171717;
+}
+
+fieldset, legend {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	overflow: visible;
+	box-sizing:border-box;
+    outline:0;
+    width:100%;
+	border:1px solid #ddd;
+	background:#fff;
+	padding: 7px 10px;
+	font-size: 16px;
+	color: #16293c;
+}
+
+label {
+	margin: 0;
+	font-size: 14px;
+	color:#4a4a4a;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	box-sizing:border-box;
+	width:16px; height:16px;
+	margin-bottom:2px;
+}
+
+hr, .hidden, .hide {
+	display: none;
+}
+
+select {
+	margin: 0;
+	color: #171717;
+	vertical-align: middle;
+	font-size: 15px;
+	border: 1px solid #ddd;
+	padding: 1px 5px 2px;
+	box-sizing:border-box;
+	background:#fff;
+	outline:0;
+	height:35px;
+}
+
+div.file_wrap {
+	position: relative;
+	left: 0;
+	top: -1px;
+	width: 150px;
+	height: 39px;
+	overflow: hidden;
+	float: left;
+}
+
+input.file {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	cursor: pointer;
+}
+
+input.file_txt {
+	float: left;
+	cursor:pointer;
+}
+
+table {
+	table-layout: fixed;
+}
+
+iframe {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+button{
+    font-family: "NSR", 돋움;
+}
+
+.hide{display:none;}
+.text_hide{position:absolute; display:inline-block; overflow:hidden; width: 0;}
+.clearfix{clear:both;}
+.small{margin-left:1px; font-size:16px; color:#b6bec6; line-height:1px;}
+.full_bg{
+	position:fixed; top:0; left:0; z-index:11;
+	width:100%; height:100%;
+	background:rgba(0,0,0,.6);
+}
+.ir_txt{width:0; height:0; text-indent:-9999em;}
+.nolink{pointer-events: none;}
+.pointer{cursor: pointer;}
+.mar_b0{margin-bottom:0 !important;}
+.blind{visibility: hidden;}
+.input_notice{border:1px solid #4f575b !important; background:#848c93 !important;}
+::selection{background:#a9ba67; color:#fff;}
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+    font-family: "NSR", 돋움;
+    font-size:15px;
+    color: #929292;
+}

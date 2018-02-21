@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>myBox</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.min.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/swiper/swiper.min.css">
+		<script src="../js/swiper/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/jquery-ui.css">
+		<script src="../js/jquery-ui.js"></script>
+	</head>
+	<body class="sub join">
+		<div id="wrap">
+			<!-- Header -->
+			<div id="header">
+				<a href="javascript:history.back();" class="back_arrow">
+					<img src="../images/icon_backpage.png" alt="뒤로가기">
+				</a>
+				<h1>내 정보 변경하기</h1>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con">
+						<p class="notice_essential">*필수 입력 항목</p>
+						<div class="title_wrap">
+							<h2 class="headline">아이디</h2>
+							<p class="user_email">skald@gaemi.biz</p>
+						</div>
+						<div class="title_wrap">
+							<h2>* 현재 비밀번호</h2>
+						</div>
+						<input type="password" class="pass_now">
+						<div class="title_wrap">
+							<h2>새 비밀번호</h2>
+						</div>
+						<input type="password" class="pass" placeholder="6~12자 이내 숫자, 알파벳">
+						<input type="password" class="pass_confirm" placeholder="새 비밀번호 확인">
+					</div>
+				</div>
+				<!-- //Section 01 -->
+				<!-- Section 02 -->
+				<div class="section">
+					<div class="con">
+						<div class="title_wrap">
+							<h2>전화번호</h2>
+						</div>
+						<div class="schedule_form">
+							<input type="text" placeholder="전화번호">
+						</div>
+						<div class="title_wrap">
+							<h2>배송지 주소</h2>
+						</div>
+						<div class="schedule_form">
+							<div class="address_form">
+								<input class="address1" type="text" placeholder="주소">
+								<button class="btn_gray right address_search" type="button">주소검색</button>
+								<input class="detail_address" type="text" placeholder="상세주소">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //Section 02 -->
+				<!-- Section 03 -->
+				<div class="section">
+					<div class="con">
+						<div class="title_wrap">
+							<h2 class="headline">등록된 카드정보</h2>
+							<button class="select_del" type="button"><img src="../images/icon_del.png" alt="선택 아이템 삭제"></button>
+						</div>
+						<!-- 카드 신규 등록 -->
+						<div class="round_wrap new_card">
+							<div class="card_register_notice">
+								등록된 카드가 없습니다.<br />
+								카드정보를 등록해 주세요.
+							</div>
+							<div class="card_form card_register_info">
+								<div class="line_wrap">
+									<label for="cardNum">카드번호</label>
+									<input id="cardNum" class="card_num en" type="text" placeholder="0000-0000-0000-0000">
+								</div>
+								<div class="line_wrap half">
+									<label for="cardNum">유효기간</label>
+									<input id="cardNum" class="card_num en" type="text" placeholder="MM/YY">
+								</div>
+								<div class="line_wrap half">
+									<label for="cardPass">비밀번호 앞 2자리</label>
+									<input id="cardPass" class="card_pass en" type="password" placeholder="2자리 숫자">
+								</div>
+								<div class="line_wrap half">
+									<label for="cardName">계좌이름</label>
+									<input id="cardName" class="card_name" type="text" placeholder="최대6글자">
+								</div>
+								<div class="line_wrap half">
+									<label for="cardCompany">카드사 </label>
+									<input id="cardCompany" class="card_company" type="text" placeholder="카드사이름">
+								</div>
+							</div>
+						</div>
+						<!-- //카드 신규 등록 -->
+						<!-- 등록된 카드 -->
+						<div class="round_wrap register_card">
+							<div class="card_title">신한카드</div>
+							<div class="card_form card_info">
+								<h3>카드번호</h3>
+								<p class="card_num">****-****-****-1234</p>
+							</div>
+						</div>
+						<!-- //등록된 카드 -->
+					</div>
+				</div>
+				<!-- //Section 03 -->
+				<a href="01메인화면.html" class="btn">확인</a>
+			</div>
+			<!-- //Container -->
+
+			<!-- Bottom -->
+			<div id="bottom">
+				<ul id="quick_nav">
+					<li><a href="09활동알림.html"><img src="../images/main/icon_bell.png" alt="활동/알람"></a></li>
+					<li><a href="06-01수거요청.html"><img src="../images/main/icon_mybox.png" alt="수거요청"></a></li>
+					<li><a href="07-01창고보관중.html"><img src="../images/main/icon_storage.png" alt="창고아이템배송요청"></a></li>
+				</ul>
+			</div>
+			<!-- //Bottom -->
+		</div>
+
+		<!-- Pop up: 주소 검색 -->
+		<div class="pop_wrap address_pick">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">주소검색</h2>
+					<h3>도로명 또는 동,명을 입력 해 주세요</h3>
+					<div class="line_wrap">
+						<input type="text" class="search_ipt">
+						<button class="btn_gray" type="button">검색</button>
+					</div>
+
+					<h3>해당 주소지를 선택해 주세요</h3>
+					<div class="address_list">
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+					</div>
+					<button class="btn ok" type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 주소 검색 -->
+	</body>
+</html>

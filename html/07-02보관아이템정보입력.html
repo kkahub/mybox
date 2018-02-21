@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>myBox</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.min.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/swiper/swiper.min.css">
+		<script src="../js/swiper/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/jquery-ui.css">
+		<script src="../js/jquery-ui.js"></script>
+	</head>
+	<body class="sub deliver">
+		<div id="wrap">
+			<!-- Header -->
+			<div id="header">
+				<a href="javascript:history.back();" class="back_arrow">
+					<img src="../images/icon_backpage.png" alt="뒤로가기">
+				</a>
+				<h1><a href="01메인화면.html"><img class="logo" src="../images/logo.png" alt="myBox"></a></h1>
+			</div>
+			<!-- //Header -->
+
+			<!-- Container -->
+			<div id="container">
+				<!-- Section 01 -->
+				<div class="section">
+					<div class="con">
+						<ul class="step_state">
+							<li>step1</li>
+							<li class="on">step2</li>
+							<li>step3</li>
+							<li>step4</li>
+							<li>step5</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //Section 01 -->
+				<!-- Section 02 -->
+				<div class="section">
+					<div class="con notice_info">
+						<div class="notice_info_wrap clearfix">
+							<h2 class="headline">배송안내</h2>
+							<ul class="list">
+								<li>배송 팀의  스케줄을  확인 해  주십시오.</li>
+								<li>정기 배송의 경우 배송일정을 미리 설정해 주십시오.</li>
+								<li>
+									같은 시간대에 같은 지역 배송이 있을 시 50%의 배송요금
+									할인을 받으 실 수 있습니다.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Section 02 -->
+				<!-- Section 03 -->
+				<div class="section">
+					<div class="con">
+						<div class="title_wrap">
+							<h2>02. 정보를 확인해주세요.</h2>
+						</div>
+						<div class="schedule_form">
+							<input type="text" placeholder="성명">
+							<input type="text" placeholder="전화번호">
+							<div class="address_form">
+								<input class="address1" type="text" placeholder="주소">
+								<button class="btn_gray right address_search" type="button">주소검색</button>
+								<input class="detail_address" type="text" placeholder="상세주소">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //Section 03 -->
+				<!-- Section 04 -->
+				<div class="section">
+					<div class="con">
+						<div class="title_wrap">
+							<h2>배송 스케줄</h2>
+						</div>
+						<div class="delivery_date">
+							<div class="year line-up">
+								<label for="deliveryYear">2018년</label><!-- 선택된 옵션 -->
+								<select name="deliveryYear" id="deliveryYear" class="delivery_year">
+									<option value="" selected>2018년</option>
+									<option value="">2019년</option>
+									<option value="">2020년</option>
+									<option value="">2021년</option>
+									<option value="">2022년</option>
+								</select>
+							</div>
+							<div class="month line-up">
+								<label for="deliveryMonth">12월</label><!-- 선택된 옵션 -->
+								<select name="deliveryMonth" id="deliveryMonth" class="delivery_month">
+									<option value="">1월</option>
+									<option value="">2월</option>
+									<option value="">3월</option>
+									<option value="">4월</option>
+									<option value="">5월</option>
+									<option value="">6월</option>
+									<option value="">7월</option>
+									<option value="">8월</option>
+									<option value="">9월</option>
+									<option value="">10월</option>
+									<option value="">11월</option>
+									<option value="" selected>12월</option>
+								</select>
+							</div>
+							<div class="week line-up">
+								<label for="deliveryWeek">1째주</label><!-- 선택된 옵션 -->
+								<select name="deliveryWeek" id="deliveryWeek" class="delivery_week">
+									<option value="">1째주</option>
+									<option value="">2째주</option>
+									<option value="">3째주</option>
+									<option value="" selected>4째주</option>
+								</select>
+							</div>
+						</div>
+						<ul class="delivery_day">
+							<li>
+								<dl>
+									<dt>
+										<span class="days">월</span> 12. 30
+									</dt>
+									<dd>
+										<ul class="chk_date">
+											<li>
+												<span class="delivery_time">10:00~12:00</span>
+												<em>4,000원</em>
+												<div class="chk_style">
+													<input id="" name="deliveryPick" type="radio">
+													<i></i>
+												</div>
+											</li>
+											<li>
+												<span class="delivery_time">16:00~18:00</span>
+												<em>10,000원</em>
+												<div class="chk_style">
+													<input id="" name="deliveryPick" type="radio">
+													<i></i>
+												</div>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<span class="days">화</span> 12. 31
+									</dt>
+									<dd>
+										<ul class="chk_date">
+											<li>
+												<span class="delivery_no">불가</span>
+												<div class="chk_style">
+													<input id="" type="checkbox" disabled>
+													<i></i>
+												</div>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //Section 04 -->
+				<a href="07-03기타정보입력.html" class="btn">다음</a>
+			</div>
+			<!-- //Container -->
+
+			<!-- Bottom -->
+			<div id="bottom">
+				<ul id="quick_nav">
+					<li><a href="09활동알림.html"><img src="../images/main/icon_bell.png" alt="활동/알람"></a></li>
+					<li><a href="06-01수거요청.html"><img src="../images/main/icon_mybox.png" alt="수거요청"></a></li>
+					<li><a href="07-01창고보관중.html"><img src="../images/main/icon_storage.png" alt="창고아이템배송요청"></a></li>
+				</ul>
+			</div>
+			<!-- //Bottom -->
+		</div>
+
+		<!-- Pop up: 주소 검색 -->
+		<div class="pop_wrap address_pick">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">주소검색</h2>
+					<h3>도로명 또는 동,명을 입력 해 주세요</h3>
+					<div class="line_wrap">
+						<input type="text" class="search_ipt">
+						<button class="btn_gray" type="button">검색</button>
+					</div>
+
+					<h3>해당 주소지를 선택해 주세요</h3>
+					<div class="address_list">
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+						<div>서울시 강남구 가로수 2길 356</div>
+					</div>
+					<button class="btn ok" type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 주소 검색 -->
+
+		<!-- Pop up: 방문 시간 선택 -->
+		<div class="pop_wrap same_delivery">
+			<div class="pop_midle">
+				<div class="pop_win">
+					<h2 class="pop_title">마이박스</h2>
+					<p>같은 시간대에 같은 지역의<br>배송건이 있습니다.</p>
+					<p>배송 요금 <strong>50% 할인</strong><br>받으실 수 있습니다.</p>
+					<button class="btn ok" type="button">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- //Pop up: 방문 시간 선택 -->
+	</body>
+</html>
